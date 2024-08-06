@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", "Noto Sans TC", serif;
+    margin:0px;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1296px;
+    margin:0px auto;
+    @include pad_plus(){
+        padding: 0px 12px;
+    }
+    @include pad(){
+        padding: 0px 13.5px;
+    }
+    @include mobil(){
+        padding: 0px 12px;
+    }
+}
+.padding_frame{
+    padding: 80px 0px;
+    @include mobil(){
+        padding: 40px 0px;
+    }
+}
+.color_dark{
+    color:#000000;
+}
+
+$color_primary:#AA0601;
+$padding_top:8px;
+$padding_bottom:8px;
+$color_sec:#650300;
+
+.flex{
+    display: flex;
+}
+
+.fs-1{
+    font-size: 4rem;
+}
+.fs-2{
+    font-size: 3rem;
+}
+
+.fs-2_6{
+    font-size: 2.625rem;
+}
+
+.fs-3{
+    font-size: 2rem;
+}
+.fs-4{
+    font-size: 1.5rem;
+}
+.fs-5{
+    font-size: 1.25rem;
+}
+.fs-6{
+    font-size: 1rem;
+}
+.fs-7{
+    font-size: 0.875rem;
+}
+
+
+/* color */
+.color_wine_red{
+    color:#650300;
+}
+
+.color_white{
+    color:#FFFFFF;
+}
+
+.color_pink{
+    background:#FBF2F2;
+}
+
+.color_red{
+    color:#AA0601;
+}
+
+.color_grey1{
+    color:#00000029;
+}
+.color_grey2{
+    color:#DEE2E6;
+}
+.color_grey3{
+    color:#707070;
+}
+.lh-12{
+    line-height: 1.2;
+}
+.lh-15{
+    line-height: 1.5;
+}
+.mb_4{
+    margin-bottom: 4px;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+// col 數量
+.col_12{
+    width: 100%;
+}
+.col_11{
+    width: 91%;
+}
+.col_10{
+    width: 82%;
+}
+.col-9{
+    width: 76%;
+}
+.col-8{
+    width: 68%;
+}
+.col-7{
+    width: 58.3%;
+}
+.col-6{
+    width: 50%;
+}
+.col-5{
+    width: 42%;
+}
+.col-4{
+    width: 33.333%;
+}
+.col-3{
+    flex: 0px auto;
+    width: 25%;
+}
+.col-2{
+    width: 817%;
+}
+.col-1{
+    width: 8.3%;
+}

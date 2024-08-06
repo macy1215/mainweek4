@@ -1,0 +1,137 @@
+.store_box{
+    padding-top:96px ;
+    .store_title{
+        border-left: 8px solid #9F1213;
+        padding-left:16px;
+    }
+    @include pad(){
+        padding-top: 80px;
+        padding-left:32px;
+        padding-right:32px;
+        .store_title{
+            border-left: 8px solid #9F1213;
+            padding-left:16px;
+        }
+    }
+    @include mobil(){
+        padding-top: 40px;
+    }
+}
+.area{
+    align-items: center;
+    margin-top: 32px;
+    @include pad(){
+            padding-left:32px;
+            padding-right:32px; 
+    }
+    @include mobil(){
+        justify-content: space-between;
+        .fs-4{
+            font-size: 16px;
+        }
+        .drop_list{
+            width: 80%;
+            margin:0px;
+        }
+    }
+}
+.drop_list{
+    padding:6px 12px;
+    margin-left: 16px;
+    width:23%;
+}
+.store_list{
+    @include pad(){
+        padding: 0px 35px;
+        .container{
+            padding: 0px;
+        }
+    }
+}
+.card_box_store{
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-right:-12px;
+    margin-left:-12px;
+    .single{
+        max-width: 33.33%;
+        padding: 0px 12px;
+        a{
+            display: block;
+        }
+        .card_img{
+            padding: 0px;
+        }
+    }
+    h5{
+        border: 1px solid #00000020;
+        padding: 8px 24px;
+    }
+    .infor{
+        border: 1px solid #00000020;
+        padding:16px 28px;
+        .title{
+             display: flex;
+             align-items: center;
+             img{
+                padding-right: 10px;
+             }
+        }
+        .title_address{
+            display: flex;
+            align-items: start;
+            img{
+                padding-top: 6px;
+                padding-right: 10px;
+            }
+        }
+        p:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+    .btn_infor{
+        max-width: 100%;
+        text-align: center;
+    }
+    a{
+        background: #000000;
+        font-size: 19px;
+        line-height: 1.5;
+        display: block;
+        padding: 16px 0px ;
+    }
+    
+    a:hover{
+        color:yellow;
+        background-color: #9F1213;
+        transition: 0.3s;
+    }
+    @include pad(){
+        // padding: 40px 16px 0px 16px;
+        padding-bottom: 80px;
+        margin-right:-12px;
+        margin-left:-12px;
+        .single{
+            max-width: 50%;
+            margin-bottom: 24px;
+        }
+    }
+    @include mobil(){
+        flex-wrap: wrap;
+        padding-top: 24px;
+        gap: 24px 24px;
+        padding-bottom: 64px;
+        .single{
+            max-width: 100%;
+        }
+    }
+
+}
+
+.card_box_store .single:last-child{
+    @include pad(){
+        margin-bottom: 0px;
+    }
+}
+
