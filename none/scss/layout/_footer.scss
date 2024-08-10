@@ -1,0 +1,141 @@
+.footer{
+  background: #AA0601;
+  padding-top: 60px;
+    .bottom_nav{
+      align-items: start;
+      justify-content: space-between;
+      
+      .infor_box_bottom{
+        flex-wrap: wrap;
+      }
+      .nav_bot_item{
+        padding-top: 14px;
+        align-items: center;
+        width: 100%;
+        li:not(:last-child) {
+          padding-right: 48px;
+        }
+        li a{
+          font-weight: normal;
+        }
+        li a:hover{
+          color: yellow;
+        }
+      }
+    }
+}
+
+.nav_bot_icon {
+  li:not(:last-child) {
+    margin-right: 32px;
+  }  
+  li{
+    max-width: 48px;
+    }
+}
+.store_infor_box{
+  padding:36px 0px 32px 0px;
+  .mb_8{
+    padding-bottom: 8px;
+  }
+}
+.store_infor{
+  display: flex;
+  align-items: center;
+    a:hover{
+      color:aquamarine;
+    }
+    .icon{
+      width: 36px;
+      margin-right: 22px;
+      height: 100%;
+    }
+
+    
+}
+.copy_bottom{
+  padding: 32px 0px;
+  border-top: 1px solid #FFFFFF;
+  opacity: 1;
+  justify-content: space-between;
+  .copyright{
+    font-family: 'Roboto';
+  }
+  li:not(:last-child){
+    padding-right: 48px;
+  }
+  a:hover{
+    color: yellow;
+  }
+}
+@include pad(){
+  .footer{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .nav_bot_icon li {
+    max-width: 40px;
+  }
+}
+
+@include mobil() {
+  .footer{
+    padding: 27px 16px 24px 16px;
+    .container{
+      padding: 0px;
+    }
+  }
+  
+  .bottom_nav{
+    margin-bottom: 24px;
+    .infor_box_bottom {
+      ul{
+        display: none;
+      }
+      .store_infor_box{
+        padding:0px;
+        
+        .store_infor{
+          .icon{
+            width: 20px;
+            margin-right: 10px;
+            display: inline-block;
+          }
+          .pa_1{
+            padding: 0px 1px;
+          }
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .nav_bot_icon{
+      li{
+        width: 24px;
+        .icon{
+          display: block;
+        }
+      }
+      li:not(:last-child) {
+        margin-right: 8px;
+      }  
+    }
+    
+  }
+  .copy_bottom{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    ul{
+      display: block;
+      li{
+        padding-bottom: 8px;
+      }
+    }
+  }
+  .copyright{
+    margin-bottom: 8px;
+  }
+}
+
